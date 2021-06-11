@@ -1,0 +1,12 @@
+node_modules
+dist
+
+*.DS_Store
+
+package-lock.json
+
+.c9
+.vscode
+
+Thumbs.db
+Thumbs.db.encrypted
