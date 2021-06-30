@@ -23,9 +23,9 @@ const version = require('gulp-version-number')
 const webp = require('gulp-webp')
 
 const frameworkPath = 'framework'
-const distJsPath = 'dist/assets/js'
-const distProdPath = 'dist'
-const distProdRecursivePath = 'dist/**/*'
+const distJsPath = 'docs/assets/js'
+const distProdPath = 'docs'
+const distProdRecursivePath = 'docs/**/*'
 
 
 // reload web browser
@@ -63,7 +63,7 @@ gulp.task('build-html', () => {
 
 
 const srcScssPath = 'src/assets/scss/base.scss'
-const distCssPath = 'dist/assets/css'
+const distCssPath = 'docs/assets/css'
 gulp.task('build-sass', () => {
   return gulp.src(srcScssPath)
     .pipe(sassGlob())
@@ -121,8 +121,8 @@ gulp.task('bundle-js', () => {
 
 
 const srcImageRecursivePath = 'src/assets/image/**/*'
-const distLqImagePath = 'dist/assets/image/low'
-const distHqImagePath = 'dist/assets/image/high'
+const distLqImagePath = 'docs/assets/image/low'
+const distHqImagePath = 'docs/assets/image/high'
 gulp.task('move-image-low', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(gulp.dest(distLqImagePath))
