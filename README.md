@@ -19,4 +19,4 @@ $ yarn dev
 $ yarn build
 ```
 
-This frontend project is a bundle with the [Yogurt CSS](https://yogurtcss.netlify.app) framework.
+This frontend project is a bundle with the Yogurt CSS framework.
